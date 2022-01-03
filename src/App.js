@@ -61,24 +61,24 @@ class App extends Component {
 			})
 			.then(response =>{ 
 				console.log(response);
-			// 	if(response){
-			// 		fetch('https://ancient-caverns-91973.herokuapp.com/image',{
-			// 			method: 'put',
-			// 			headers: {'Content-Type': 'application/json'},
-			// 					body:JSON.stringify({
-			// 					  id:this.state.user.id,
-			// 				})
-			// 				})
-			// 		.then(response => response.json())
-			// 		.then(data => {
-			// 			if(data){
+				if(response){
+					fetch('https://ancient-caverns-91973.herokuapp.com/image',{
+						method: 'put',
+						headers: {'Content-Type': 'application/json'},
+								body:JSON.stringify({
+								  id:this.state.user.id,
+							})
+							})
+					.then(response => response.json())
+					.then(data => {
+						if(data){
 	
-			// 				this.setState(Object.assign(this.state.user, {entries:data}));
-			// 	}
-			// }).catch(console.log)
-			// 	}
-				// 				this.displayFaceBox(this.calculateFaceLocation(response))}).catch(err=>
-				// console.log(err));
+							this.setState(Object.assign(this.state.user, {entries:data}));
+				}
+			}).catch(console.log)
+				}
+								this.displayFaceBox(this.calculateFaceLocation(response))}).catch(err=>
+				console.log(err));
 
 
 })
