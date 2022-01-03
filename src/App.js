@@ -60,7 +60,7 @@ class App extends Component {
 				})
 			})
 			.then(response =>{ 
-				
+			console.log(response);	
 if (response) {
 fetch('https://ancient-caverns-91973.herokuapp.com/image', {
             method: 'put',
