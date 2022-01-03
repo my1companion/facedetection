@@ -74,17 +74,16 @@ class App extends Component {
 					.then(data => {
 						if(data){
 	
-							this.setState(Object.assign(this.state.user, {entries:data}));
-				}
-			}).catch(console.log)
-			
-				 				this.displayFaceBox(this.calculateFaceLocation(response)).catch(err=>
-				 console.log(err));
-}else{
-	console.log('failed');
-}
+			 				this.setState(Object.assign(this.state.user, {entries:data}));
+			 	}
+			 }).catch(console.log)
+			 	}
 
+				 				this.displayFaceBox(this.calculateFaceLocation(response))
+				 								// console.log(err));
 })
+
+}
 
 		// app.models.predict(Clarifai.FACE_DETECT_MODEL,this.state.input).then(
 		// 	response=>{
