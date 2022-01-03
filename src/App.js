@@ -81,7 +81,7 @@ class App extends Component {
 				// console.log(err));
 
 
-}
+})
 
 		// app.models.predict(Clarifai.FACE_DETECT_MODEL,this.state.input).then(
 		// 	response=>{
