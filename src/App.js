@@ -79,7 +79,7 @@ class App extends Component {
 			 }).catch(console.log)
 			 	}
 
-				 				this.displayFaceBox(this.calculateFaceLocation(response))
+				 				this.displayFaceBox(this.calculateFaceLocation(response));
 				 								// console.log(err));
 })
 
