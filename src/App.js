@@ -76,7 +76,7 @@ fetch('https://ancient-caverns-91973.herokuapp.com/image', {
             .catch(console.log)
 
         }
-        console.log(response.data);
+        console.log(response.outputs);
         this.displayFaceBox(this.calculateFaceLocation(response))
       })
       .catch(err => console.log(err));
