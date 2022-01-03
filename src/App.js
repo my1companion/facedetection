@@ -58,7 +58,7 @@ class App extends Component {
 				body:JSON.stringify({
 					input:this.state.input,
 				})
-			})
+			}).then(response =>response.json())
 			.then(response =>{ 
 			console.log(response);	
 if (response) {
