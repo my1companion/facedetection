@@ -61,7 +61,8 @@ class App extends Component {
 			})
 			.then(response =>{ 
 				//console.log(response);
-			// 	if(response){
+			 	if(response){
+			 		console.log('hello');
 			// 		fetch('https://ancient-caverns-91973.herokuapp.com/image',{
 			// 			method: 'put',
 			// 			headers: {'Content-Type': 'application/json'},
@@ -79,7 +80,9 @@ class App extends Component {
 			// 	}
 				// 				this.displayFaceBox(this.calculateFaceLocation(response))}).catch(err=>
 				// console.log(err));
-
+}else{
+	console.log('failed');
+}
 
 })
 
