@@ -130,7 +130,7 @@ fetch('https://ancient-caverns-91973.herokuapp.com/image', {
 
 			
 			
-	}
+	
 
 	displayFaceBox = (box) =>{
 		console.log(box);
